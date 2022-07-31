@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Olymp Helper Server-Side Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "KS6",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mysql": "^2.18.1"
+  }
+}

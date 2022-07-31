@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\programm">
+      <UniqueIdentifier>{55f3e214-4e56-4c60-9c08-38ba195267cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math">
+      <UniqueIdentifier>{7942de1a-b42d-42f3-9b98-a32ccdc82209}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math\complex">
+      <UniqueIdentifier>{cbfaac3c-265b-4c95-8df1-503dbd090b45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math\random">
+      <UniqueIdentifier>{5604af0e-eb16-4ec2-be37-75379c2fbbfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\programm\frame">
+      <UniqueIdentifier>{c1d89611-c346-4711-b5f6-9bc378153d8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\programm\utils">
+      <UniqueIdentifier>{8263e35a-d7e2-4f67-9d48-8eddffaf31a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\programm\utils\color">
+      <UniqueIdentifier>{0649c29c-7566-46b7-b9f3-f356121826d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\programm\utils\timer">
+      <UniqueIdentifier>{f60bdb93-6b41-4a73-9c89-709f426b1134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\paralel_draw">
+      <UniqueIdentifier>{e60647de-9d7a-4995-8141-d8d99ef8593e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="t03mandl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="programm\frame\frame.cpp">
+      <Filter>Source Files\programm\frame</Filter>
+    </ClCompile>
+    <ClCompile Include="programm\utils\color\color.cpp">
+      <Filter>Source Files\programm\utils\color</Filter>
+    </ClCompile>
+    <ClCompile Include="math\complex\cmpl.cpp">
+      <Filter>Source Files\math\complex</Filter>
+    </ClCompile>
+    <ClCompile Include="math\random\random.cpp">
+      <Filter>Source Files\math\random</Filter>
+    </ClCompile>
+    <ClCompile Include="programm\programm.cpp">
+      <Filter>Source Files\programm</Filter>
+    </ClCompile>
+    <ClCompile Include="programm\utils\timer\timer.cpp">
+      <Filter>Source Files\programm\utils\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="paralel_draw\paralel_draw_set.cpp">
+      <Filter>Source Files\paralel_draw</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="programm\frame\frame.h">
+      <Filter>Source Files\programm\frame</Filter>
+    </ClInclude>
+    <ClInclude Include="math\complex\cmpl.h">
+      <Filter>Source Files\math\complex</Filter>
+    </ClInclude>
+    <ClInclude Include="math\random\random.h">
+      <Filter>Source Files\math\random</Filter>
+    </ClInclude>
+    <ClInclude Include="programm\utils\color\color.h">
+      <Filter>Source Files\programm\utils\color</Filter>
+    </ClInclude>
+    <ClInclude Include="programm\programm.h">
+      <Filter>Source Files\programm</Filter>
+    </ClInclude>
+    <ClInclude Include="programm\utils\timer\timer.h">
+      <Filter>Source Files\programm\utils\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="paralel_draw\paralel_draw.h">
+      <Filter>Source Files\paralel_draw</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

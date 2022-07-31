@@ -1,0 +1,33 @@
+String length = 104631
+String count = 451
+Letters = 84
+Letter A meets 0 times
+Letter B meets 0 times
+Letter C meets 0 times
+Letter D meets 0 times
+Letter E meets 1 times
+Letter F meets 0 times
+Letter G meets 0 times
+Letter H meets 0 times
+Letter I meets 31 times
+Letter J meets 0 times
+Letter K meets 0 times
+Letter L meets 0 times
+Letter M meets 3 times
+Letter N meets 13 times
+Letter O meets 11 times
+Letter P meets 1 times
+Letter Q meets 0 times
+Letter R meets 0 times
+Letter S meets 1 times
+Letter T meets 0 times
+Letter U meets 1 times
+Letter V meets 10 times
+Letter W meets 0 times
+Letter X meets 12 times
+Letter Y meets 0 times
+Letter Z meets 0 times
+Pali words = 2775
+Words = 16615
+Digit = 47171
+Float = 47171.000000

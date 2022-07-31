@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Olymp Helper Vendor Client</title>
+  <link rel="stylesheet" href="./index.css">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+</head>
+
+<body>
+  <div class="navbar">
+    <p>Send Tasks:</p>
+    <button actionSelector>1</button>
+    <button actionSelector>2</button>
+    <button actionSelector>3</button>
+    <button actionSelector>4</button>
+    <button actionSelector>5</button>
+
+    <button actionSelector>Screenshots</button>
+  </div>
+
+  <form method="post" action="api/task/submit/" id="code-send">
+    <input id="sending-task-number" type="hidden" name="taskNumber">
+    <textarea id="code" spellcheck="false" name="taskCode"></textarea>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+
+  <div id="tasksPics"></div>
+
+  <script>
+    const tasksSelectors = document.querySelectorAll("[actionSelector]");
+    let activeAction, submitedTasks = [];
+
+    const codeSendForm = document.getElementById('code-send');
+    const sendingTaskNumber = document.getElementById("sending-task-number");
+    const taskCode = document.getElementById('code');
+
+    const tasksPicsContatiner = document.getElementById('tasksPics');
+
+    async function requestSubmitedTasks() {
+      const response = await fetch('api/task/request', {
+        method: "GET",
+        headers: { "Content-Type": "application/json;charset=utf-8" },
+      });
+
+      if (!response.ok) return;
+      const result = await response.json();
+
+      submitedTasks = result.submitedTasks;
+      submitedTasks.forEach((element, index) => {
+        if (element != null && element != '') tasksSelectors[index].classList.add('submited');
+      })
+    }
+
+    function setActiveAction() {
+      activeAction?.classList.remove('selected');
+      activeAction = this;
+      activeAction.classList.add('selected');
+
+      if (activeAction.innerHTML == 'Screenshots') {
+        tasksPicsContatiner.style.display = 'flex';
+        codeSendForm.style.display = 'none';
+      } else {
+        codeSendForm.style.display = 'flex';
+        tasksPicsContatiner.style.display = 'none';
+        sendingTaskNumber.value = activeAction.innerHTML;
+      }
+      taskCode.value = submitedTasks[sendingTaskNumber.value - 1] != undefined ? submitedTasks[sendingTaskNumber.value - 1] : '';
+    }
+
+    function removeTasksPic(tasksPicFileName) {
+      fetch('api/task/remove-tasks-pic', { 
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ tasksPicFileName })
+      }).then(() => window.location.reload);
+    }
+
+    function addNewTasksPic(tasksPicFileName) {
+      let newScreenshotWrapper = document.createElement('div');
+      newScreenshotWrapper.classList.add('screenshotWrapper');
+
+      let newScreenshot = document.createElement('img');
+      newScreenshot.src = `/screenshots/${tasksPicFileName}`;
+      newScreenshotWrapper.appendChild(newScreenshot);
+
+      let deleteButton = document.createElement('button');
+      deleteButton.addEventListener('click', () => removeTasksPic(tasksPicFileName));
+      deleteButton.classList.add('btn-close')
+      deleteButton.innerHTML = '<span class="icon-cross"></span><span class="visually-hidden">Close</span>';
+      newScreenshotWrapper.appendChild(deleteButton);
+
+      tasksPicsContatiner.appendChild(newScreenshotWrapper);
+    }
+
+    tasksSelectors.forEach(element => element.addEventListener('click', setActiveAction));
+    requestSubmitedTasks().then(setActiveAction.bind(tasksSelectors[0]));
+
+    const toDateString = (str) => `${str[0]}-${str[1]}-${str[2]}T${str[3]}:${str[4]}:${str[5]}`;
+    fetch('api/task/tasks-pics', { method: "GET" })
+      .then((response) => response.json())
+      .then((filesList) => {
+        filesList.sort((a, b) => {
+          a = ((a.split('.'))[0]).split('-');
+          b = ((b.split('.'))[0]).split('-');
+
+          const aStr = toDateString(a.map((subStr, index) => index == 0 ? subStr : ("0" + subStr).slice(-2)));
+          const bStr = toDateString(b.map((subStr, index) => index == 0 ? subStr : ("0" + subStr).slice(-2)));
+
+          const aDate = new Date(aStr);
+          const bDate = new Date(bStr);
+        
+          return aDate.getTime() - bDate.getTime();
+        });
+        filesList.forEach((fName) => addNewTasksPic(fName));
+      });
+  </script>
+</body>

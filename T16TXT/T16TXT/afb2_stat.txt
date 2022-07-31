@@ -1,0 +1,34 @@
+String length: 15812432
+Lines count: 212652
+Letters count: 12527438
+Digits count: 2245641
+Letter A: 669717 times
+Letter B: 452091 times
+Letter C: 537770 times
+Letter D: 441376 times
+Letter E: 443571 times
+Letter F: 431849 times
+Letter G: 532187 times
+Letter H: 424366 times
+Letter I: 563246 times
+Letter J: 492047 times
+Letter K: 492556 times
+Letter L: 474461 times
+Letter M: 468440 times
+Letter N: 452685 times
+Letter O: 431550 times
+Letter P: 475665 times
+Letter Q: 474369 times
+Letter R: 473254 times
+Letter S: 493910 times
+Letter T: 482257 times
+Letter U: 467729 times
+Letter V: 477765 times
+Letter W: 463153 times
+Letter X: 468575 times
+Letter Y: 478353 times
+Letter Z: 464496 times
+Symmetric words count: 125
+Words count: 242543
+Digit sum: 18446744073459127105
+Float sum: 103784365423024540000000000000000.000000

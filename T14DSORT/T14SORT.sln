@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "T14SORT", "T14SORT.vcproj", "{3BA1AAB5-9F51-4CDB-886F-D6C134AAB4FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BA1AAB5-9F51-4CDB-886F-D6C134AAB4FC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3BA1AAB5-9F51-4CDB-886F-D6C134AAB4FC}.Debug|Win32.Build.0 = Debug|Win32
+		{3BA1AAB5-9F51-4CDB-886F-D6C134AAB4FC}.Release|Win32.ActiveCfg = Release|Win32
+		{3BA1AAB5-9F51-4CDB-886F-D6C134AAB4FC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

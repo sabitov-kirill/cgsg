@@ -1,0 +1,125 @@
+@import url('./elements.css');
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+
+    margin: auto;
+    min-width: 50%;
+    width: fit-content;
+    height: 3rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+.navbar > button {
+    border: 0;
+    border-radius: 0.5rem;
+    background-color: var(--grey);
+
+    min-width: 3rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+.navbar > button:hover,
+.navbar > button.selected {
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--black1);
+}
+.navbar > button.submited {
+    color: var(--white);
+    background-color: var(--green);
+}
+.navbar > button.submited:hover,
+.navbar > button.submited.selected {
+    background-color: var(--green1);
+}
+.navbar button:last-child {
+    margin-left: auto;
+    background-color: var(--blue);
+    color: var(--white);
+}
+.navbar button:last-child:hover,
+.navbar button:last-child.selected {
+    filter: brightness(0.8);
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        min-height: 7rem;
+        height: fit-content;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar > button, p {
+        min-width: 7rem;
+        font-size: 4rem;
+    }
+    .navbar button:last-child {
+        margin-left: 0;
+    }
+}
+
+#code-send {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    min-height: max-content;
+    width: fit-content;
+    align-items: center;
+}
+#code-send > * {
+    margin-bottom: 0.5rem;
+}
+#code-send > #code {
+    font-size: 1.2rem;
+    font-family: Consolas, 'Courier New', monospace;
+
+    border: 2px var(--black) solid;
+    border-radius: 0.3rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    padding: 0.2rem;
+    min-width: 50vw;
+    max-width: 90vw;
+    min-height: 50vh;
+    max-height: 80vh;
+}
+#code-send > #submit {
+    align-self: flex-end;
+    background-color: var(--green);
+    color: var(--white);
+
+    border: 0;
+    border-radius: 0.5rem;
+
+    width: 10rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+#tasksPics {
+    margin: auto;
+    align-items: center;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+#tasksPics > .screenshotWrapper > img {
+    width: fit-content;
+    max-width: 70vw;
+}
+#tasksPics > .screenshotWrapper {
+    position: relative;
+}
+#tasksPics > .screenshotWrapper > .btn-close {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+}

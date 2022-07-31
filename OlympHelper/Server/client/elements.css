@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300&family=Hubballi&display=swap');
+
+:root {
+  --black: #222;
+  --black1: #555;
+  --white: #eee;
+  --grey: #bbb; 
+  --grey1: #999; 
+  --red: rgb(255, 46, 46);
+  --blue: rgb(0, 47, 255);
+  --green: rgb(33, 167, 0);
+  --green1: rgb(33, 127, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Assistant', sans-serif;
+
+  left: 0;
+  top: 0;
+
+  width: 100vw;
+  min-height: 100vh;
+  font-size: 1.8vh;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1500px) {
+  body {
+    font-size: 3vh;
+    width: 100%;
+  }
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: 'Hubballi', cursive;
+  font-size: 2rem;
+  color: var(--black1);
+}
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-family: 'Hubballi', cursive;
+  font-size: 2.5rem;
+  color: var(--black1);
+}
+p {
+  font-family: 'Assistant', sans-serif;
+  font-size: 2rem;
+  color: var(--black1);
+}
+
+a {
+  padding: 0.3rem;
+  color: var(--white);
+  background-color: var(--black1);
+  border-radius: 0.2rem;
+  text-decoration: none;
+}
+a:visited {
+  color: var(--white);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: var(--black1);
+  background-color: var(--grey);
+  transition: 0.5s;
+}
+
+a[disabled] {
+  color: var(--white);
+  background-color: var(--red);
+  cursor: default;
+  text-decoration: none;
+}
+a[disabled]:hover {
+  background-color: rgb(80, 0, 0);
+  cursor: default;
+  text-decoration: none;
+}
+
+.btn-close {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: var(--red);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 150ms;
+}
+.btn-close .icon-cross {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.btn-close .icon-cross:before, .btn-close .icon-cross:after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+}
+.btn-close .icon-cross:before {
+  transform: rotate(45deg);
+}
+.btn-close .icon-cross:after {
+  transform: rotate(-45deg);
+}
+.btn-close .icon-cross span {
+  display: block;
+}
+.btn-close:hover, .btn-close:focus {
+  transform: rotateZ(90deg);
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}

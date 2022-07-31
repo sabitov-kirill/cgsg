@@ -1,0 +1,21 @@
+Cost of 1 work hour: 165
+Worker #1 (Andrey) got 70950 rubles by 40 days.
+Worker #2 (Alexandra) got 16665 rubles by 40 days.
+Worker #3 (Andrew) got 18315 rubles by 40 days.
+Worker #4 (Andrew) got 57750 rubles by 40 days.
+Worker #5 (Dan) got 121110 rubles by 40 days.
+Worker #6 (Daniel) got 76230 rubles by 40 days.
+Worker #7 (Elizaveta) got 103950 rubles by 40 days.
+Worker #8 (Elizaveta) got 56430 rubles by 40 days.
+Worker #9 (Ekaterina) got -1657133984 rubles by 40 days.
+Worker #10 (Fedor) got 119955 rubles by 40 days.
+Worker #11 (FEDOR) got 107745 rubles by 40 days.
+Worker #12 (Gleb) got 25575 rubles by 40 days.
+Worker #13 (Ivan) got 21285 rubles by 40 days.
+Worker #14 (Konstantin) got 198000 rubles by 40 days.
+Worker #15 (Kirill) got 30030 rubles by 40 days.
+Worker #16 (Kirill) got 0 rubles by 40 days.
+Worker #17 (Nickolay) got 61050 rubles by 40 days.
+Worker #18 (Nikita) got 28545 rubles by 40 days.
+Worker #19 (Stepan) got 158400 rubles by 40 days.
+Worker #20 (Aleksand) got 0 rubles by 40 days.

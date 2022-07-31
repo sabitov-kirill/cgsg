@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Animation System">
+      <UniqueIdentifier>{bc9483cd-a2c8-4f2e-8330-9f747a6cdfb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animation System\Render System">
+      <UniqueIdentifier>{b695c1cb-7b18-411d-b55e-d2e2e3b0f16b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animation System\Input System">
+      <UniqueIdentifier>{015376d8-65b5-4bbe-af4c-5d4d9f6f32ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animation System\Timer System">
+      <UniqueIdentifier>{88739f4e-2504-4ca2-a5c3-dfef226ce7bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animation System\Render System\Resourses Handle">
+      <UniqueIdentifier>{1687aaa1-6d54-4e3c-85b2-a57cf9015bf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mathematics Handle">
+      <UniqueIdentifier>{ab5c6c87-6f81-4ec2-8294-4c1d32b5ecf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Units Storage">
+      <UniqueIdentifier>{7804d2df-6aef-4565-8d2b-6e9869f95c59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animation System\Render System\Resourses Storage">
+      <UniqueIdentifier>{6c1048ce-244e-464f-80c7-3d8ccca9c52a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{0ec2a876-f8e2-4da4-b27b-bbb5c117f84d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animation System\Render System\Resourses Handle\Other">
+      <UniqueIdentifier>{23b462b5-74a5-4431-bcfe-0fbee10c9f61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animation System\Render System\Resourses Handle\Texture">
+      <UniqueIdentifier>{c69266d3-488f-4105-a756-f81724089c9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animation System\Render System\Resourses Handle\Rendering Objects">
+      <UniqueIdentifier>{143bc36b-2642-4731-bde9-fa1ff16c4ded}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animation System\Render System\Resourses Handle\Shaders">
+      <UniqueIdentifier>{7f33ca76-8407-46b0-9581-5d04dc4b10eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animation System\Render System\Resourses Handle\Materials">
+      <UniqueIdentifier>{2995f5c0-59bc-46fd-8d34-b6e32a7dcefc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Units Storage\Game Units">
+      <UniqueIdentifier>{eb550320-e47a-4ec1-885a-e9153c3f3446}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animation System\Window Control System">
+      <UniqueIdentifier>{6398902a-bebe-4a96-8f1f-a99e3569eea4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Animation System\Render System\Glew">
+      <UniqueIdentifier>{1cebc67a-4eec-4851-b08c-e84f717abee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{9a69b4f1-a389-4965-9284-ec71cf6e8e83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders\default">
+      <UniqueIdentifier>{a84ce0df-8059-4751-93c3-058bb21a998c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders\sky_sphere">
+      <UniqueIdentifier>{41d19a41-a69b-451a-90e0-a533020592b4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\anim\anim.h">
+      <Filter>Source Files\Animation System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\render\render.h">
+      <Filter>Source Files\Animation System\Render System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\render\storage\primitive_manager.h">
+      <Filter>Source Files\Animation System\Render System\Resourses Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\render\storage\shader_manager.h">
+      <Filter>Source Files\Animation System\Render System\Resourses Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\render\storage\material_manager.h">
+      <Filter>Source Files\Animation System\Render System\Resourses Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\render\storage\texture_manager.h">
+      <Filter>Source Files\Animation System\Render System\Resourses Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utilities\binary_reader.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kigl.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\render\resourses\image.h">
+      <Filter>Source Files\Animation System\Render System\Resourses Handle\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\render\resourses\texture.h">
+      <Filter>Source Files\Animation System\Render System\Resourses Handle\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\render\resourses\primitive.h">
+      <Filter>Source Files\Animation System\Render System\Resourses Handle\Rendering Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\render\resourses\model.h">
+      <Filter>Source Files\Animation System\Render System\Resourses Handle\Rendering Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\render\resourses\shader.h">
+      <Filter>Source Files\Animation System\Render System\Resourses Handle\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utilities\stock.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\units\enemies_shooting.h">
+      <Filter>Source Files\Units Storage\Game Units</Filter>
+    </ClInclude>
+    <ClInclude Include="src\units\game.h">
+      <Filter>Source Files\Units Storage\Game Units</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\input.h">
+      <Filter>Source Files\Animation System\Input System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\timer.h">
+      <Filter>Source Files\Animation System\Timer System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\win\win.h">
+      <Filter>Source Files\Animation System\Window Control System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\render\resourses\material.h">
+      <Filter>Source Files\Animation System\Render System\Resourses Handle\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\render\resourses\vertex.h">
+      <Filter>Source Files\Animation System\Render System\Resourses Handle\Rendering Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\render\resourses\topology.h">
+      <Filter>Source Files\Animation System\Render System\Resourses Handle\Rendering Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mth\mth.h">
+      <Filter>Source Files\Mathematics Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mth\mth_matr.h">
+      <Filter>Source Files\Mathematics Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mth\mth_ray.h">
+      <Filter>Source Files\Mathematics Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mth\mth_sphere.h">
+      <Filter>Source Files\Mathematics Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mth\mth_vec3.h">
+      <Filter>Source Files\Mathematics Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mth\mth_vec4.h">
+      <Filter>Source Files\Mathematics Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mth\mth_vec2.h">
+      <Filter>Source Files\Mathematics Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mth\mth_camera.h">
+      <Filter>Source Files\Mathematics Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\render\storage\buffer_manager.h">
+      <Filter>Source Files\Animation System\Render System\Resourses Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\unit.h">
+      <Filter>Source Files\Animation System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\scene.h">
+      <Filter>Source Files\Animation System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\units\units.h">
+      <Filter>Source Files\Units Storage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\units\player_move.h">
+      <Filter>Source Files\Units Storage\Game Units</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\render\resourses\skysphere.h">
+      <Filter>Source Files\Animation System\Render System\Resourses Handle\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="src\units\enviroment.h">
+      <Filter>Source Files\Units Storage\Game Units</Filter>
+    </ClInclude>
+    <ClInclude Include="src\anim\render\resourses\buffer.h">
+      <Filter>Source Files\Animation System\Render System\Resourses Handle\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\units\clouds.h">
+      <Filter>Source Files\Units Storage</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\mth\mthdef.h">
+      <Filter>Source Files\Mathematics Handle</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\anim\render\render_base.cpp">
+      <Filter>Source Files\Animation System\Render System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\anim\render\render_draw.cpp">
+      <Filter>Source Files\Animation System\Render System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\anim\render\glew\glew.c">
+      <Filter>Source Files\Animation System\Render System\Glew</Filter>
+    </ClCompile>
+    <ClCompile Include="src\anim\render\storage\resourses_manager.h">
+      <Filter>Source Files\Animation System\Render System\Resourses Storage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\anim\anim.cpp">
+      <Filter>Source Files\Animation System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\anim\render\resourses\model.cpp">
+      <Filter>Source Files\Animation System\Render System\Resourses Handle\Rendering Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\anim\render\resourses\shader.cpp">
+      <Filter>Source Files\Animation System\Render System\Resourses Handle\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\anim\win\win.cpp">
+      <Filter>Source Files\Animation System\Window Control System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\anim\win\win_callbacks.cpp">
+      <Filter>Source Files\Animation System\Window Control System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\anim\win\win_messages.cpp">
+      <Filter>Source Files\Animation System\Window Control System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\anim\render\resourses\material.cpp">
+      <Filter>Source Files\Animation System\Render System\Resourses Handle\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="src\anim\render\resourses\vertex.cpp">
+      <Filter>Source Files\Animation System\Render System\Resourses Handle\Rendering Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\anim\render\resourses\skysphere.cpp">
+      <Filter>Source Files\Animation System\Render System\Resourses Handle\Other</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\shaders\buffers_input_sample.glsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="bin\shaders\default\frag.glsl">
+      <Filter>Resource Files\Shaders\default</Filter>
+    </None>
+    <None Include="bin\shaders\default\vert.glsl">
+      <Filter>Resource Files\Shaders\default</Filter>
+    </None>
+    <None Include="bin\shaders\sky_sphere\frag.glsl">
+      <Filter>Resource Files\Shaders\sky_sphere</Filter>
+    </None>
+    <None Include="bin\shaders\sky_sphere\geom.glsl">
+      <Filter>Resource Files\Shaders\sky_sphere</Filter>
+    </None>
+    <None Include="bin\shaders\sky_sphere\vert.glsl">
+      <Filter>Resource Files\Shaders\sky_sphere</Filter>
+    </None>
+  </ItemGroup>
+</Project>
